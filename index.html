@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <title>DeliverIT</title>
+
+</head>
+
+<style>
+    .slider{
+        height: 100%;
+    }
+    .slide{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: calc(100vh - 50px);
+    }
+    .img1{
+        background-image: url("img/photo.jpg");
+    }
+    .img2{
+        background-image: url("img/IMG-20210504-WA0065.jpg");
+    }
+    .img3{
+        background-image: url("img/IMG-20210504-WA0071.jpg");
+    }
+    .who-we-are{
+        position: relative;
+        top: 50px;
+        text-align: center;
+    }
+    .heading{
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+		overflow: visible;
+		white-space: nowrap;
+		font-family: 'Segoe UI';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 5vw;
+		color: rgba(75,83,32,1);
+    }
+    .who-we-are-paragraph{
+        overflow: visible;
+		font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+		font-style: normal;
+		font-weight: 490;
+		font-size: 1.5vw;
+		color: rgb(3, 3,1 );
+    }
+    .who-we-are-detail{
+        font-weight: bold;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        border-radius: 20px;
+        color: black;
+        background-color: rgba(234,191,185,1);
+    }
+    hr{
+        width: 80%;
+        border: 1px solid rgba(184,107,119,1);
+        margin-bottom: 60px;
+    }
+    .our-services{
+        position: relative;
+        top: 50px;
+        text-align: center;
+    }
+    .services-background{
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        background-color: rgba(184,107,119,1);
+
+    }
+    .space{
+        margin-bottom: 350px;
+    }
+    .card-images{
+        width: 100%;
+        height: 280px;
+    }
+    .card{
+        width: 30%;
+        height: 350px;
+    }
+    .card1{
+        position: relative;
+        top: -100px;
+        float: left;
+    }
+    .card2{
+        position: relative;
+        top: -175px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .card3{
+        position: relative;
+        top: -610px;
+        float: right;
+    }
+    .service-detail{
+        position: relative;
+        bottom: 40px;
+        font-weight: bold;
+        border-radius: 20px;
+        color: black;
+        background-color: rgba(234,191,185,1);
+    }
+    .contact{
+        width: 100%;
+        position: relative;
+        top: 450px;
+        text-align: center;
+    }
+    .contact-wrapper{
+        height: 450px;
+        background-color: rgba(234,191,185,1);
+    }
+    .form-style{
+        border-left: 2px solid rgba(184,107,119,1);
+    }
+    .testimonials{
+        text-align: center;
+        position: relative;
+        top: 450px;
+    }
+
+    .empty-boxx{
+        background-color: rgba(234,191,185,1);
+        height: 20px; 
+        width: 100%;
+        position: relative;
+        top: 550px;
+    }
+    footer{
+            position: relative;
+            top: 550px;
+    }
+    @media screen and (max-width: 700px) {
+        .who-we-are-paragraph{
+            font-size: 3vw;
+        }
+        .service-detail{
+            bottom: 70px;
+        }
+        .services-background{
+            height: 270px;
+        }
+        .space{
+            margin-bottom: 250px;
+        }
+        .card{
+            height: 250px;
+        }
+        .card-images{
+            height: 180px;
+        }
+        .empty-boxx{
+            height: 20px;
+        }
+        .card1{
+            top: -123px;
+        }
+        .card2{
+            top: -145px;
+        }
+        .card3{
+            top: -437px;
+        }
+        .contact{
+            top: 320px;
+        }
+        .contact-wrapper{
+            height: auto;
+        }
+        .form-style{
+        border-left: none;
+    }
+        .testimonials{
+            top: 250px;
+        }
+        .empty-boxx{
+            top: 250px;
+        }
+        footer{
+            position: relative;
+            top: 250px;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- navbar -->
+    <header>
+        <nav class="black">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="index.html" class="left white-text">Home</a>
+                    <ul class="right">
+                        <li><a href="about.html" class="white-text">About Us</a></li>
+                        <li><a href="services.html" class="white-text">Services</a></li>
+                        <li><a href="contact.html" class="white-text">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- site content-->
+    
+    <section class="banner">
+        <div class="slider single-item">
+            <div class="slide img1">
+            </div>
+            <div class="slide img2">
+            </div>
+            <div class="slide img3">
+            </div>
+        </div>
+    </section>
+
+    <section class="who-we-are">
+        <div class="container">
+            <h4 style="color: #4b5320;" class="heading">Who We Are</h4>
+            <p class="who-we-are-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nulla sollicitudin maximus ipsum eu molestie. Aenean lacinia
+            in elit at vehicula. Pellentesque sit amet rhoncus libero.
+            Donec venenatis justo ac nibh pulvinar, vel consectetur sapien
+            condimentum. Suspendisse vitae dapibus augue. Quisque ultricies
+            mauris id arcu condimentum, eu porttitor arcu mollis. Curabitur
+            faucibus convallis felis, vel laoreet dolor fermentum ac. In tempus,
+            purus ac vehicula accumsan, ante enim gravida sapien, sit amet feugiat
+            massa ligula non ante. Mauris egestas in libero eu egestas. Nam diam nisl,
+            dignissim vitae quam a, auctor vehicula dui. Donec interdum bibendum nibh,
+            non ultricies mauris vehicula nec.
+            </p>
+            <a href="#" class="btn who-we-are-detail">Our Story</a>
+        </div>
+        <hr>
+    </section>
+    <section class="our-services">
+        <h4 style="color: #4b5320;" class="space heading">Our Services</h4>
+        <div class="services-background">
+            <div class="container">
+                <div class="card card1">
+                    <div class="card-image">
+                        <img src="img/s1.jpg" alt="" class="card-images">
+                    </div>
+                    <div class="card-content">Service type 1</div>
+                </div>
+                <div class="card card2">
+                    <div class="card-image">
+                        <img src="img/s2.jpg" alt="" class="card-images">
+                    </div>
+                    <div class="card-content">Service type 2</div>
+                </div>
+                <div class="card card3">
+                    <div class="card-image">
+                        <img src="img/s3.jpg" alt="" class="card-images">
+                    </div>
+                    <div class="card-content">Service type 3</div>
+                </div>
+                <a href="#" class="btn service-detail">Our Services</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact-wrapper">
+            <div class="container">
+                <h4 class="heading" style="position: relative; top: 50px;">Get in touch with us!</h4>
+                <div class="row" style="margin-top: 100px;" >
+                    <div class="col s12 m4">
+                        <h5>Do you have a query?</h5>
+                        <p>
+                            Mauris egestas in libero eu egestas. Nam diam nisl,
+                            dignissim vitae quam a, auctor vehicula dui. Donec interdum bibendum nibh,
+                            non ultricies mauris vehicula nec. Nam diam nisl,
+                            dignissim vitae quam a, auctor vehicula dui. Donec interdum bibendum nibh,
+                            non ultricies mauris vehicula nec.
+                        </p>
+                    </div>
+                    <div class="col s12 m8 form-style">
+                        <form action="#" method="POST" id="cform" name="formm">
+                            <div class="input-field">
+                                <i class="material-icons prefix">person</i>
+                                <input type="text" id="fname" name="fname" required>
+                                <label for="fname">Your full name</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">call</i>
+                                <input type="tel" id="contact" name="contact" required>
+                                <label for="contact">Your contact number</label>
+                            </div>
+                            <div class="row">
+                                <div class="col s10">
+                                    <div class="input-field">
+                                        <i class="material-icons prefix">edit</i>
+                                        <textarea id="textarea1" class="materialize-textarea" name="msg"></textarea>
+                                        <label for="textarea1">Your message</label>
+                                    </div>
+                                </div>
+                                <div class="col s2">
+                                    <div class="input-field center">
+                                        <input type="button" value="Submit" id="btnsubmit" onclick="submitForm()" class="btn black-text" style="border-radius: 20px; background-color: rgba(184,107,119,1);">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="testimonials">
+        <div class="container">
+            <h4 class="heading" style="margin: 90px;">Testimonials</h4>
+            <div class="owl-carousel">
+                <div class="item">
+                    <div class="btn-floating grey btn-large"></div>
+                    <h5 style="color: rgba(75,83,32,1);">"The end result is what I wanted!"</h5>
+                    <div class="container">
+                        <p style="text-align: center;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nulla sollicitudin maximus ipsum eu molestie. Aenean lacinia
+                            in elit at vehicula. Pellentesque sit amet rhoncus libero.
+                            Donec venenatis justo ac nibh pulvinar, vel consectetur sapien
+                            condimentum.
+                        </p>
+                    </div>
+                    <span style="color: rgba(234,191,185,1); font-weight: 700;">Hazel Knaught</span>
+                </div>
+                <div class="item">
+                    <div class="btn-floating grey btn-large"></div>
+                    <h5 style="color: rgba(75,83,32,1);">"The end result is what I wanted!"</h5>
+                    <div class="container">
+                        <p style="text-align: center;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nulla sollicitudin maximus ipsum eu molestie. Aenean lacinia
+                            in elit at vehicula. Pellentesque sit amet rhoncus libero.
+                            Donec venenatis justo ac nibh pulvinar, vel consectetur sapien
+                            condimentum.
+                        </p>
+                    </div>
+                    <span style="color: rgba(234,191,185,1); font-weight: 700;">Kat White</span>
+                </div>
+                <div class="item">
+                    <div class="btn-floating grey btn-large"></div>
+                    <h5 style="color: rgba(75,83,32,1);">"The end result is what I wanted!"</h5>
+                    <div class="container">
+                        <p style="text-align: center;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nulla sollicitudin maximus ipsum eu molestie. Aenean lacinia
+                            in elit at vehicula. Pellentesque sit amet rhoncus libero.
+                            Donec venenatis justo ac nibh pulvinar, vel consectetur sapien
+                            condimentum.
+                        </p>
+                    </div>
+                    <span style="color: rgba(234,191,185,1); font-weight: 700;">Tee Zero</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="empty-boxx"></div>
+    
+    <!-- footer -->
+
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Our Location</h5>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Socials</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright black">
+          <div class="container">
+          © 2021 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div> 
+        </div>
+      </footer>
+ 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script> 
+
+</body>
+</html>

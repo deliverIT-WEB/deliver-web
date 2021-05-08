@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <title>DeliverIT</title>
+</head>
+
+<style>
+    .heading{
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+		overflow: visible;
+		white-space: nowrap;
+		font-family: 'Segoe UI';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 5vw;
+		color: rgba(75,83,32,1);
+    }
+    .our-services{
+        position: relative;
+        top: 50px;
+        text-align: center;
+    }
+    .services-background{
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        background-color: rgba(184,107,119,1);
+
+    }
+    .space{
+        margin-bottom: 350px;
+    }
+    .card-images{
+        width: 100%;
+        height: 280px;
+    }
+    .card{
+        width: 30%;
+        height: 350px;
+    }
+    .card1{
+        position: relative;
+        top: -100px;
+        float: left;
+    }
+    .card2{
+        position: relative;
+        top: -175px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .card3{
+        position: relative;
+        top: -610px;
+        float: right;
+    }
+    .service-detail-info{
+        width: 100%;
+        position: relative;
+        top: 450px;
+        text-align: center;
+    }
+    .service-feature{
+        text-align: start;
+        font-size: 1.4vw;
+    }
+    .service-description{
+        text-align: center;
+        font-size: 1.5vw;
+        border-left: 2px solid rgba(184,107,119,1);
+    }
+    .service-detail-info-wrapper{
+        height: 350px;
+        background-color: rgba(234,191,185,1);
+    }
+    .testimonials{
+        text-align: center;
+        position: relative;
+        top: 450px;
+    }
+    .empty-box{
+        background-color: rgba(234,191,185,1);
+        height: 20px; 
+        width: 100%;
+        position: relative;
+        top: 500px;
+    }
+    footer{
+            position: relative;
+            top: 500px;
+    }
+    @media screen and (max-width: 700px) {
+        .service-feature{
+        text-align: start;
+        font-size: 2vw;
+        }
+        .service-description{
+            border-left: none;
+            font-size: 2.4vw;
+        }
+        .services-background{
+            height: 250px;
+        }
+        .space{
+            margin-bottom: 250px;
+        }
+        .card{
+            height: 250px;
+        }
+        .card-images{
+            height: 180px;
+        }
+        .card1{
+            top: -123px;
+        }
+        .card2{
+            top: -145px;
+        }
+        .card3{
+            top: -437px;
+        }
+        .service-detail-info{
+            top: 250px;
+        }
+        .service-detail-info-wrapper{
+            height: 350px;
+            background-color: rgba(234,191,185,1);
+        }
+        .testimonials{
+            top: 250px;
+        }
+        .empty-box{
+            top: 250px;
+        }
+        footer{
+            position: relative;
+            top: 250px;
+        }
+    }
+</style>
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="black">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="index.html" class="left white-text">Home</a>
+                    <ul class="right">
+                        <li><a href="about.html" class="white-text">About Us</a></li>
+                        <li><a href="services.html" class="white-text">Services</a></li>
+                        <li><a href="contact.html" class="white-text">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Service Content -->
+    <section class="our-services">
+        <h4 style="color: #4b5320;" class="space heading">Our Services</h4>
+        <div class="services-background">
+            <div class="container">
+                <div class="card card1">
+                    <div class="card-image">
+                        <img src="img/s1.jpg" alt="" class="card-images">
+                    </div>
+                    <div class="card-content">Service type 1</div>
+                </div>
+                <div class="card card2">
+                    <div class="card-image">
+                        <img src="img/s2.jpg" alt="" class="card-images">
+                    </div>
+                    <div class="card-content">Service type 2</div>
+                </div>
+                <div class="card card3">
+                    <div class="card-image">
+                        <img src="img/s3.jpg" alt="" class="card-images">
+                    </div>
+                    <div class="card-content">Service type 3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service-detail-info">
+        <div class="service-detail-info-wrapper">
+            <div class="container">
+                <div class="one-time">
+                    <div class="item">
+                        <h5  style="position: relative; top: 50px;">Service Type 01</h5>
+                        <div class="row" style="margin-top: 100px;" >
+                            <div class="col s12 m4">
+                                <h5 style="font-weight: bold;">Service Features</h5>
+                                   <li class="service-feature">Nam diam nisl, dignissim vitae quam a, auctor vehicula dui.</li>
+                                    <li class="service-feature">Nam diam nisl, dignissim vitae quam a, auctor vehicula dui.</li>  
+                            </div>
+                            <div class="col s12 m8">
+                                <h5 style="font-weight: bold;">Service Description</h5>
+                                <p class="service-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Nulla sollicitudin maximus ipsum eu molestie. Aenean lacinia
+                                    in elit at vehicula. Pellentesque sit amet rhoncus libero.
+                                    Donec venenatis justo ac nibh pulvinar, vel consectetur sapien
+                                    condimentum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h5  style="position: relative; top: 50px;">Service Type 02</h5>
+                        <div class="row" style="margin-top: 100px;" >
+                            <div class="col s12 m4">
+                                <h5 style="font-weight: bold;">Service Features</h5>
+                                   <li class="service-feature">Nam diam nisl, dignissim vitae quam a, auctor vehicula dui.</li>
+                                    <li class="service-feature">Nam diam nisl, dignissim vitae quam a, auctor vehicula dui.</li>  
+                            </div>
+                            <div class="col s12 m8">
+                                <h5 style="font-weight: bold;">Service Description</h5>
+                                <p class="service-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Nulla sollicitudin maximus ipsum eu molestie. Aenean lacinia
+                                    in elit at vehicula. Pellentesque sit amet rhoncus libero.
+                                    Donec venenatis justo ac nibh pulvinar, vel consectetur sapien
+                                    condimentum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h5  style="position: relative; top: 50px;">Service Type 03</h5>
+                        <div class="row" style="margin-top: 100px;" >
+                            <div class="col s12 m4">
+                                <h5 style="font-weight: bold;">Service Features</h5>
+                                   <li class="service-feature">Nam diam nisl, dignissim vitae quam a, auctor vehicula dui.</li>
+                                    <li class="service-feature">Nam diam nisl, dignissim vitae quam a, auctor vehicula dui.</li>  
+                            </div>
+                            <div class="col s12 m8">
+                                <h5 style="font-weight: bold;">Service Description</h5>
+                                <p class="service-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Nulla sollicitudin maximus ipsum eu molestie. Aenean lacinia
+                                    in elit at vehicula. Pellentesque sit amet rhoncus libero.
+                                    Donec venenatis justo ac nibh pulvinar, vel consectetur sapien
+                                    condimentum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+        <div class="container">
+            <h4 class="heading" style="margin: 90px;">Testimonials</h4>
+            <div class="owl-carousel">
+                <div class="item">
+                    <div class="btn-floating grey btn-large"></div>
+                    <h5 style="color: rgba(75,83,32,1);">"The end result is what I wanted!"</h5>
+                    <div class="container">
+                        <p style="text-align: center;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nulla sollicitudin maximus ipsum eu molestie. Aenean lacinia
+                            in elit at vehicula. Pellentesque sit amet rhoncus libero.
+                            Donec venenatis justo ac nibh pulvinar, vel consectetur sapien
+                            condimentum.
+                        </p>
+                    </div>
+                    <span style="color: rgba(234,191,185,1); font-weight: 700;">Hazel Knaught</span>
+                </div>
+                <div class="item">
+                    <div class="btn-floating grey btn-large"></div>
+                    <h5 style="color: rgba(75,83,32,1);">"The end result is what I wanted!"</h5>
+                    <div class="container">
+                        <p style="text-align: center;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nulla sollicitudin maximus ipsum eu molestie. Aenean lacinia
+                            in elit at vehicula. Pellentesque sit amet rhoncus libero.
+                            Donec venenatis justo ac nibh pulvinar, vel consectetur sapien
+                            condimentum.
+                        </p>
+                    </div>
+                    <span style="color: rgba(234,191,185,1); font-weight: 700;">Kat White</span>
+                </div>
+                <div class="item">
+                    <div class="btn-floating grey btn-large"></div>
+                    <h5 style="color: rgba(75,83,32,1);">"The end result is what I wanted!"</h5>
+                    <div class="container">
+                        <p style="text-align: center;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nulla sollicitudin maximus ipsum eu molestie. Aenean lacinia
+                            in elit at vehicula. Pellentesque sit amet rhoncus libero.
+                            Donec venenatis justo ac nibh pulvinar, vel consectetur sapien
+                            condimentum.
+                        </p>
+                    </div>
+                    <span style="color: rgba(234,191,185,1); font-weight: 700;">Tee Zero</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="empty-box"></div>
+    <!-- footer -->
+
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Our Location</h5>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Socials</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright black">
+          <div class="container">
+          © 2021 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+</body>
+</html>
